@@ -50,11 +50,11 @@
 		  "transcriptFields": ["Email__c"]
 		},{
 		  "label":"Website Url", 
-		  "transcriptFields": ["WebsiteUrl__c"]
+		  "transcriptFields": ["Chat_Domain__c"]
 		}];
 		embedded_svc.init(
-			'https://jaipurrugs.my.salesforce.com',
-			'https://jaipurrugs.my.salesforce-sites.com/liveAgentSetupFlow',
+			'https://jaipurrugs--service11.sandbox.my.salesforce.com/',
+			'https://jaipurrugs--service11.sandbox.my.salesforce-sites.com/liveAgentSetupFlow',
 			gslbBaseURL,
 			'00D2y0000004fWB',
 			'Jaipur_Rugs_Group',
@@ -71,7 +71,7 @@
 
 	if (!window.embedded_svc) {
 		var s = document.createElement('script');
-		s.setAttribute('src', 'https://jaipurrugs.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+		s.setAttribute('src', 'https://jaipurrugs--service11.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
 		s.onload = function() {
 			initESW(null);
 		};
